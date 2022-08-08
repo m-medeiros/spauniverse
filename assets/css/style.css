@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff__default: "Roboto", sans-serif;
+  font-size: 62.5%;
+  --hue: 194;
+  --text: hsl(var(--hue), 255%, 255%);
+  --nav-link: #c4c4cc;
+  --text-hover: hsl(var(--hue), 97%, 31%);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nav-link);
+}
+
+body {
+  font-family: var(--ff__default);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text);
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/img/mountains-universe-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg__universe {
+  background-image: url(/assets/img/mountains-universe02.png);
+}
+
+.bg__exploration {
+  background-image: url(/assets/img/mountains-universe-3.png);
+}
+
+nav {
+  height: 12.2rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 4.3rem;
+  margin: 0 7.2rem;
+}
+
+nav img {
+  width: 4.9rem;
+  height: 4.2rem;
+}
+
+nav ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 5.3rem;
+}
+
+nav a {
+  font-size: 2.4rem;
+  line-height: 2.1;
+}
+
+nav a:hover {
+  color: hsl(var(--hue), 255%, 255%);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.box_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: white;
+  margin-top: 17.2rem;
+}
+
+button {
+  /* width: 19.5rem; */
+  height: 4.8rem;
+  background: transparent;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+}
+
+button a {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  padding: 1.6rem 3.2rem;
+  color: hsl(var(--hue), 255%, 255%);
+}
+
+/* button:hover {
+  background: white;
+} */
+
+button:hover,
+button a:hover {
+  background: var(--text);
+  color: var(--text-hover);
+}
+
+.universe_content {
+  width: 64.8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0 10.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-top: 1.6rem;
+}
+
+nav a:active {
+  color: hsl(var(--hue), 255%, 255%);
+}
